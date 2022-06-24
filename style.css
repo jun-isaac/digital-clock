@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'digital-7-mono';
+    src: url(font/digital-7-mono.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./images/bg00.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.clock {
+    /* background: #999; */
+    background-image: url(./images/filter1.png),
+        url(./images/bg01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow:
+        4px 4px 6px rgba(0, 0, 0, 0.3),
+        0 0 8px rgba(0, 0, 0, 0.7) inset;
+    width: 650px;
+    height: 240px;
+    display: flex;
+    padding: 25px;
+    /* justify-content: center; */
+    align-items: center;
+    border: 10px solid #fff;
+    border-radius: 10px;
+    font-size: 130px;
+    font-weight: 500;
+    font-family: 'digital-7-mono', monospace;
+    position: relative;
+    color: #fff;
+    z-index: 3;
+}
+
+.clock .container {
+    display: flex;
+}
+
+.time {
+    position: absolute;
+    font-size: 100px;
+    font-family: 'digital-7-mono', monospace;
+    bottom: 24px;
+    right: 25px;
+}
+
+.day {
+    position: absolute;
+    font-size: 65px;
+    font-family: 'digital-7-mono', monospace;
+    bottom: 110px;
+    right: 25px;
+}
+
+.btn1{
+    background: none;
+    border: none;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+    
+}
+
+.btn2{
+    background: none;
+    border: none;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.icon1 {
+    width: 100px;
+    height: 140px;
+    background-image: url(./images/icon1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: icon1;
+    animation-duration: 4s;
+    position: absolute;
+    /* 무한 반복, 역방향으로 재생 */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86)
+}
+
+@keyframes icon1 {
+    0% {
+        left: 100px;
+        top: 100px;
+    }
+
+    50% {
+        left: 250px;
+        top: 200px;
+    }
+    
+    100% {
+        left: 150px;
+        top: 50px;
+    }
+}
+
+.icon2 {
+    width: 100px;
+    height: 140px;
+    background-image: url(./images/icon2.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: icon2;
+    animation-duration: 5s;
+    position: absolute;
+    /* 무한 반복, 역방향으로 재생 */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06)
+}
+
+@keyframes icon2 {
+    0% {
+        left: 300px;
+        top: 700px;
+    }
+
+    50% {
+        left: 150px;
+        top: 600px;
+    }
+    
+    100% {
+        left: 50px;
+        top: 800px;
+    }
+}
+
+.icon3 {
+    width: 100px;
+    height: 140px;
+    background-image: url(./images/icon3.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: icon3;
+    animation-duration: 6s;
+    position: absolute;
+    /* 무한 반복, 역방향으로 재생 */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+@keyframes icon3 {
+    0% {
+        right: 800px;
+        top: 800px;
+    }
+
+    50% {
+        right: 300px;
+        top: 700px;
+    }
+    
+    100% {
+        right: 300px;
+        top: 600px;
+    }
+}
+
+.icon4 {
+    width: 100px;
+    height: 140px;
+    background-image: url(./images/icon4.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: icon4;
+    animation-duration: 5s;
+    position: absolute;
+    /* 무한 반복, 역방향으로 재생 */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
+}
+
+@keyframes icon4 {
+    0% {
+        right: 800px;
+        top: 50px;
+    }
+
+    50% {
+        right: 300px;
+        top: 250px;
+    }
+    
+    100% {
+        right: 400px;
+        top: 100px;
+    }
+}
